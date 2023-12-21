@@ -1,21 +1,15 @@
+// Create a basic app with Scaffold
 import 'package:flutter/material.dart';
+import 'package:hellow_world_flutter_application/screens/intro_screen.dart';
 
 void main() {
-  runApp(GlobeApp());
+  runApp(MyApp());
 }
 
-class GlobeApp extends StatelessWidget {
-  const GlobeApp({Key? key}) : super(key: key);
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Globe App',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: Center(
-          child: Text('Hello World one'),
-        ));
+        theme: ThemeData(primarySwatch: Colors.blueGrey), home: IntroScreen());
   }
 }
